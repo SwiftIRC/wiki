@@ -12,3 +12,9 @@ github_username:  SwiftIRC
 
 # Build settings
 markdown: kramdown
+
+root: /
+permalink: pretty
+source: source
+destination: public
+plugins: plugins
