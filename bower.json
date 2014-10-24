@@ -1,0 +1,16 @@
+{
+  "name": "SwiftIRC",
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "typicons": "*"
+  },
+  "homepage": "https://github.com/SwiftIRC/wiki",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "authors": [
+  "Amanda F.", "Amanda F. <zomg@swiftirc.net>"
+  ]
+}
