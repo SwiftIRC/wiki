@@ -1,23 +1,107 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Welcome to SwiftIRC'S Support Wiki</h1>
+				<p>This wiki is a collaboration of work from SwiftIRC staff members to help and support SwiftIRC users. These pages will hopefully answer your questions about the IRC network and the commands. We will update and add more content when required, if you do not find the information you are looking for on this wiki please ask a member of staff on SwiftIRC in <a rel="nofollow" class="external text" href="http://qwebirc.swiftirc.net/?channels=%23help">#Help</a>.</p>
+				<!-- <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p> -->
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Network information</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<ul>
+						<li><a href="/wiki/SwiftIRC_Network_Rules" title="SwiftIRC Network Rules" class="mw-redirect">Network Rules</a></li>
+							<li><a href="/wiki/Servers" title="Servers">Servers</a></li>
+							<li><a href="/wiki/Staff" title="Staff">Staff</a></li>
+							<li><a href="/wiki/Departments" title="Departments">Departments</a></li>
+							<li><a href="/wiki/SwiftIRC_History" title="SwiftIRC History" class="mw-redirect">SwiftIRC History</a></li>
+							<li><a href="/wiki/Help!_I%27m_banned_from_the_network!" title="Help! I'm banned from the network!">Network Ban Appeals</a>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h2>General support</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<ul>
+						<li><a href="/wiki/SwiftIRC_help" title="SwiftIRC help">General Help</a></li>
+						<li><a href="/wiki/IRC_Clients" title="IRC Clients">IRC Clients</a></li>
+						<li><a href="/wiki/Channel_modes" title="Channel modes">Channel Modes</a></li>
+						<li><a href="/wiki/Flood_control" title="Flood control">Flood Control</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h2>Tutorials</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<ul>
+						<li><a href="/wiki/Videos" title="Videos">Video Tutorials</a></li>
+						<li><a href="/wiki/Software" title="Software">Software guides</a></li>
+						<li><a href="/wiki/Bnc" title="Bnc">BNC Guide</a></li>
+						<li><a href="/wiki/ClassArchive" title="ClassArchive">Classes Archive</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h2>General Services Help</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+					<ul>
+						<li><a href="/wiki/NickServ" title="NickServ" class="mw-redirect">Nickserv</a></li>
+						<li><a href="/wiki/Chanserv" title="Chanserv">Chanserv</a></li>
+						<li><a href="/wiki/Botserv" title="Botserv">Botserv</a></li>
+						<li><a href="/wiki/Memoserv" title="Memoserv">Memoserv</a></li>
+						<li><a href="/wiki/Other_commands" title="Other commands">Other Commands</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h2>Services FAQ</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<ul>
+						<li><a href="/wiki/NickServ/FAQ" title="NickServ/FAQ">Nickserv FAQ</a></li>
+						<li><a href="/wiki/ChanServ/FAQ" title="ChanServ/FAQ" class="mw-redirect">Chanserv FAQ</a></li>
+						<li><a href="/wiki/BotServ/FAQ" title="BotServ/FAQ" class="mw-redirect">Botserv FAQ</a></li>
+						<li><a href="/wiki/MemoServ/FAQ" title="MemoServ/FAQ" class="mw-redirect">Memoserv FAQ</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h2>Popular Articles</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<ul>
+						<li><a href="/wiki/Mirc" title="Mirc">mIRC</a></li>
+						<li><a href="/wiki/Swiftkit" title="Swiftkit">SwiftKit</a></li>
+						<li><a href="/wiki/Creating_and_registering_a_channel" title="Creating and registering a channel">Creating a Channel</a></li>
+						<li><a href="/wiki/Channel_Link" title="Channel Link">Linking two channels</a></li>
+						<li><a href="/wiki/Custom_bots" title="Custom bots">Custom Bots</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- TODO: This should really just be an RSS feed. Or maybe we trash this section? -->
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Official network channels</h2>
+					<p><a href="http://qwebirc.swiftirc.net/?channels=%23swiftirc">#SwiftIRC</a> - This is SwiftIRC's main network channel. Although it has no specific role, it is used as a general discussion channel.</p>
+					<p><a href="http://qwebirc.swiftirc.net/?channels=%23help">#Help</a> - <a href="/wiki/Help" title="Help">#Help Wiki Page</a> - This is the SwiftIRC's main support channel. Users should use this channel for any general questions, or IRC-related queries they may have (such as services commands, issues with users/channels, or homework help).</p>
+					<p><a href="http://qwebirc.swiftirc.net/?channels=%23support">#Support</a> - <a href="/wiki/Support" title="Support">#Support Wiki Page</a> - Intended for use by users who require administrative support. It is advisable that you join #Help beforehand - If necessary, you will be directed to #support by a helper.</p>
+					<p><a href="http://qwebirc.swiftirc.net/?channels=%23wiki">#Wiki</a> - This is SwiftIrc's main channel for maintaining SwiftIrc's Wiki. Questions about the pages or help us fix errors.</p>
+				</div>
+				<div class="col-md-8">
+					<h2>Recent network news</h2>
+					<h3><a href="http://swiftirc.net/index.php?page=news&amp;action=viewcomments&amp;newsid=140">April 9th 2014 - Fully Linked: light.wa.us.SwiftIRC.net</a></h3>
+					<p>I'm pleased to announce that the server light.wa.us.SwiftIRC.net has completed its 30 day trial and passed a vote by the SwiftIRC Administration for a permanent link.</p>
+					<p>We extend our congratulations to Light's admin Benjy and warmly welcome him to the Server Administrator team.</p>
+					<h3><a href="http://swiftirc.net/index.php?page=news&amp;action=viewcomments&amp;newsid=139">February 11th 2014 - Light.wa.us.SwiftIRC.net Granted Test Link</a></h3>
+					<p>light.wa.us.SwiftIRC.net has been granted a 30 day test link to the network. We wish its owner, Benjy, best of luck on his trial. </p>
+					<p>In other news, energy.de.eu.SwiftIRC.net has been fully linked to the network. Congratulations to its administrator Sony for passing his trial!</p>
+					<h3><a rel="nofollow" class="external text" href="http://swiftirc.net/index.php?page=news&amp;action=viewcomments&amp;newsid=138">January 7th 2014 - Energy.de.eu.SwiftIRC.net Granted Test Link</a></h3>
+					<p>I would like to announce that energy.de.eu.SwiftIRC.net has been granted a 30 day test link to the network.</p>
+					<p>We wish it's owner, sony, best of luck on his trial.</p>
+					<h3><a rel="nofollow" class="external text" href="http://swiftirc.net/index.php?page=news&amp;action=viewcomments&amp;newsid=137">21st December 2013 - Server Updates</a></h3>
+					<p>lunas.fr.eu.swiftirc.net and tripwire.uk.eu.swiftirc.net have been delinked from the network. We would like to thank their administrators, Redzzy and IEP respectively for their countless hours of service to SwiftIRC.</p>
+					<p>On a more positive note, atlas.fr.eu.SwiftIRC.net has been fully linked to the network. Congratulations to its administrator eTch AKA Bluebus112 for passing his trial!</p>
+				</div>
+			</div>
+			<hr>
