@@ -97,4 +97,5 @@ DEPENDENCIES
   heroku
   jekyll (~> 2.4.0)
   rack (~> 1.5.2)
+  rb-fsevent (~> 0.9)
   sinatra (~> 1.4.5)
