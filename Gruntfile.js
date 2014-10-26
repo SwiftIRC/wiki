@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     js: '<%= config.component_path %>/js',
     images: '<%= config.component_path %>/img',
   };
-  grunt.registerTask('default', [ 'concat', 'sass', 'copy', 'cssmin', 'uglify', 'clean' ]);
+  grunt.registerTask('default', [ 'concat', 'less', 'copy', 'cssmin', 'uglify', 'clean' ]);
   grunt.initConfig({
     config: config,
     pkg: grunt.file.readJSON('package.json'),
@@ -19,32 +19,29 @@ module.exports = function(grunt) {
       bootstrap: {
         src: [
           // Individually named to control the order in which they're compiled. Tooltip must be loaded before Popover.
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/affix.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/alert.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/button.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/carousel.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/collapse.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/dropdown.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/modal.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/tooltip.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/popover.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/scrollspy.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/js/tab.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/transition.js'
+          '<%= config.bower_path %>/bootstrap/js/affix.js',
+          '<%= config.bower_path %>/bootstrap/js/alert.js',
+          '<%= config.bower_path %>/bootstrap/js/button.js',
+          '<%= config.bower_path %>/bootstrap/js/carousel.js',
+          '<%= config.bower_path %>/bootstrap/js/collapse.js',
+          '<%= config.bower_path %>/bootstrap/js/dropdown.js',
+          '<%= config.bower_path %>/bootstrap/js/modal.js',
+          '<%= config.bower_path %>/bootstrap/js/tooltip.js',
+          '<%= config.bower_path %>/bootstrap/js/popover.js',
+          '<%= config.bower_path %>/bootstrap/js/scrollspy.js',
+          '<%= config.bower_path %>/bootstrap/js/tab.js',
+          '<%= config.bower_path %>/bootstrap/js/transition.js'
         ],
         dest: '<%= config.build_path %>/bootstrap.js'
       },
     },
     // Compile this ourselves instead of using Bootstrap's grunt file/letting Jekyll compile it for us
-    sass: {
-      dist: {
-        options: {
-          expand: true,
-        },
+    less: {
+      bootstrap: {
         files: {
-          '<%= config.build_path %>/bootstrap.css': '<%= config.bower_path %>/bootstrap-sass-twbs/assets/stylesheets/_bootstrap.scss'
+          "<%= config.build_path %>/bootstrap.css": "<%= config.bower_path %>/bootstrap/less/bootstrap.less"
         }
-      }
+      },
     },
     copy: {
       main: {
@@ -112,7 +109,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   // grunt.loadNpmTasks('grunt-contrib-watch');
