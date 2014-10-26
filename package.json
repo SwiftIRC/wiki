@@ -8,7 +8,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-concat": "*",
-    "grunt-contrib-sass": "*",
+    "grunt-contrib-less": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-watch": "*"
