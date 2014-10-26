@@ -19,18 +19,18 @@ module.exports = function(grunt) {
       bootstrap: {
         src: [
           // Individually named to control the order in which they're compiled. Tooltip must be loaded before Popover.
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/affix.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/alert.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/button.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/carousel.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/collapse.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/dropdown.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/modal.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/tooltip.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/popover.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/scrollspy.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/tab.js',
-          '<%= config.bower_path %>/bootstrap-sass-twbs/js/transition.js'
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/affix.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/alert.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/button.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/carousel.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/collapse.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/dropdown.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/modal.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/tooltip.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/popover.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/scrollspy.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/js/tab.js',
+          '<%= config.bower_path %>/bootstrap-sass-twbs/assets/javascripts/bootstrap/transition.js'
         ],
         dest: '<%= config.build_path %>/bootstrap.js'
       },
