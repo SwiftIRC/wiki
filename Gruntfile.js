@@ -53,6 +53,12 @@ module.exports = function(grunt) {
           },
           {
             nonull: true,
+            cwd: ['<%= config.component_path %>/img/'],
+            src: ['*.ico', '*.png', '*.jpg'],
+            dest: '<%= config.dest_path %>/img/'
+          },
+          {
+            nonull: true,
             expand: true,
             cwd: '<%= config.component_path %>/css/',
             src: ['*.css'],
