@@ -3,7 +3,6 @@ title: Staff
 layout: page
 ---
 
-
 SwiftIRC's staff is divided into several categories. Each category has a different set of privileges and responsibilities.
 
 ## Network administrators
@@ -38,6 +37,7 @@ The current Server Administrators are:
 Global IRC Operators have moderation access on all servers connected to the network, and are are the second level of support for SwiftIRC's users. If a user has an issue that cannot be resolved by a member of the Support Staff, then an IRC Operator may intervene. IRC Operators also actively ensure that users and channels abide by the network guidelines. IRC Operators are generally nominated and voted on by the Network Administrators, Server Administrators and Global IRC Operators. Global IRC Operators have the same privileges as Server Administrators, and are therefore considered equal in the staff hierarchy.
 
 The current IRC operators are:
+
 - Ara
 - Concept
 - Dragon
